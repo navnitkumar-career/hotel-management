@@ -1,0 +1,16 @@
+curl --location --request GET 'http://localhost:8080/getlist'
+
+curl --location --request GET 'http://localhost:8080/get/1'
+
+curl --location --request GET 'http://localhost:8080/getroomlist'
+
+curl --location --request GET 'http://localhost:8080/delete/1'
+
+curl --location --request POST 'http://localhost:8080/add' \
+--header 'Content-Type: application/json' \
+--data-raw '    {
+        "id": 3,
+        "roomId": 2,
+        "residentId": 2
+    }
+    '
